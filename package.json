@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "start": "npx tsx watch src/server.ts"
   },
   "keywords": [],
@@ -22,7 +22,10 @@
     "babel-jest": "^30.4.1",
     "jest": "^30.4.2",
     "supertest": "^7.2.2",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+     "@swc/core": "^1.16.2",
+    "@swc/jest": "^0.2.39",
+     "tsx": "^4.23.13",
   },
   "dependencies": {
     "express": "^5.2.1"
